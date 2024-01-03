@@ -56,6 +56,7 @@ const corsOptions = {
   origin: [
     "https://mern-api-fzml.onrender.com",
     "https://mern-lsh5.onrender.com",
+    "https://accounts.google.com/o/oauth2/v2/auth?prompt=select_account&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000&scope=profile%20email&client_id=713870021095-8nth21o9prvq9p6eql7l4iugtcm45glk.apps.googleusercontent.com' (redirected from 'https://mern-api-fzml.onrender.com/api/user/google",
   ],
   credentials: true,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // 替換為實際需要允許的方法
