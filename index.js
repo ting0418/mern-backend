@@ -52,13 +52,13 @@ app.use(
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const corsOptions = {
-  origin: ["http://localhost:3000", "http://localhost:3005"],
-  credentials: true,
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // 替換為實際需要允許的方法
-};
+// const corsOptions = {
+//   origin: ["http://localhost:3000", "http://localhost:3005"],
+//   credentials: true,
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // 替換為實際需要允許的方法
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use("/api/user", authRoute);
 // course route應該被jwt保護
